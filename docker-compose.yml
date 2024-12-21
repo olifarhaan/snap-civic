@@ -1,0 +1,34 @@
+services:
+  mysql:
+    container_name: mysqlhost
+    image: mysql:8.0
+    ports:
+      - "3307:3306"
+    environment:
+      - MYSQL_DATABASE=snapcivic_db
+      - MYSQL_ROOT_PASSWORD=password
+    volumes:
+      - mysql_data:/var/lib/mysql
+    restart: always
+    networks:
+      - snapcivic-network
+
+  app:
+    container_name: snapcivic-app
+    build:
+      context: .
+      dockerfile: Dockerfile
+    ports:
+      - "8080:8080"
+    depends_on:
+      - mysql
+    env_file: "dockerize.env"
+    networks:
+      - snapcivic-network
+
+volumes:
+  mysql_data:
+
+networks:
+  snapcivic-network:
+    driver: bridge

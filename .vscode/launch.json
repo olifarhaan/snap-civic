@@ -1,0 +1,20 @@
+{
+    "version": "0.2.0",
+    "configurations": [
+        {
+            "type": "java",
+            "name": "Snap Civic Backend Application with ENV",
+            "request": "launch",
+            "mainClass": "com.olifarhaan.SnapCivicApplication",
+            "projectName": "snapcivic",
+            "envFile": "${workspaceFolder}/.env"
+        },
+        {
+            "type": "java",
+            "name": "Snap Civic Backend Application",
+            "request": "launch",
+            "mainClass": "com.olifarhaan.SnapCivicApplication",
+            "projectName": "snapcivic"
+        }
+    ]
+}
