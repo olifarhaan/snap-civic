@@ -34,8 +34,9 @@ out/
 /.nb-gradle/
 
 
-dockerize.env
 .env
+dockerize.env
+prod.env
 
 .pytest_cache
 __pycache__/
