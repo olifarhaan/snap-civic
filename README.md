@@ -42,6 +42,10 @@ SnapCivic is a digital platform designed to empower neighborhoods by facilitatin
   - Bookmarking functionality
   - Distance-based issue feed
 
+## Entity-Relationship Diagram
+![snap-civic-erd](https://github.com/user-attachments/assets/800ad0f5-672e-43fc-83b8-9cb937ea5a81)
+
+
 ## Getting Started
 
 ### Prerequisites
