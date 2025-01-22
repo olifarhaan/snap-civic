@@ -2,7 +2,56 @@
 
 ## Overview
 
-The platform is a digital solution to empower neighbourhoods to address local issues collectively. It provides a user-friendly interface for residents to report problems, prioritize solutions, and collaborate on improving their community. Issues like potholes, waste management, street lighting, or park maintenance can be identified and acted upon more efficiently by fostering community participation.
+SnapCivic is a digital platform designed to empower neighborhoods by facilitating community-driven issue reporting and resolution. The application enables residents to:
+
+- Report local issues (potholes, waste management, street lighting, etc.)
+- Track issue status and updates
+- Collaborate through comments and upvotes
+- Prioritize community concerns
+- Monitor issue resolution progress
+
+## Tech Stack
+
+- **Java 21** - Core programming language
+- **Spring Boot 3.3.4** - Application framework
+- **MySQL** - Database
+- **Spring Security** - Authentication and authorization
+- **JWT** - Token-based security
+- **OpenAPI/Swagger** - API documentation
+- **Gradle** - Build tool
+- **Docker** - Containerization
+
+## Key Features
+
+- **User Management**
+  - Authentication & Authorization
+  - Profile management
+  - Password reset functionality
+  - Email notifications
+
+- **Issue Management**
+  - Create, read, update, delete issues
+  - Categorization (Infrastructure, Public Safety, Environment, etc.)
+  - Status tracking (Open, In Progress, Closed)
+  - Image attachments
+  - Location-based issue tracking
+
+- **Community Engagement**
+  - Comments
+  - Upvoting system
+  - Bookmarking functionality
+  - Distance-based issue feed
+
+## Getting Started
+
+### Prerequisites
+- Java 21
+- MySQL
+- Gradle
+- Docker (optional)
+
+### Environment Variables
+Create a `.env` file with the following configurations:
 
 ## OpenAPI Documentation
 
